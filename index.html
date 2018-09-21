@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="./dist/Chatroom.css">
     <link rel="stylesheet" type="text/css" href="./index.css">
-    <title>Chatroom Example</title>
+    <title>Chatroom Demo</title>
   </head>
   <body>
     <div class="chat-container"></div>
     <script src="./dist/Chatroom.js"></script>
     <script type="text/javascript">
 window.chatroom = new window.Chatroom({
-  title: "Chat with a bot",
+  title: "Chat with a RASA bot",
   container: document.querySelector(".chat-container"),
-  welcomeMessage: "Nice to meet you.",
-  host: "http://localhost:5002",
+  welcomeMessage: "How can I help you?",
+  host: "http://localhost:5005",
 });
 window.chatroom.openChat();
 </script>
